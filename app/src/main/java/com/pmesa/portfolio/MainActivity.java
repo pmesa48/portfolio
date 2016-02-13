@@ -1,8 +1,6 @@
 package com.pmesa.portfolio;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -13,18 +11,6 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-    private Button btnSpotify;
-
-    private Button btnScores;
-
-    private Button btnLibrary;
-
-    private Button btnBuildIt;
-
-    private Button btnXYZReader;
-
-    private Button btnCapstone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,22 +46,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void loadButtons()
     {
-        btnSpotify = (Button)findViewById(R.id.btn_spotify);
+        Button btnSpotify = (Button) findViewById(R.id.btn_spotify);
         btnSpotify.setOnClickListener(this);
 
-        btnScores = (Button)findViewById(R.id.btn_scores);
+        Button btnScores = (Button) findViewById(R.id.btn_scores);
         btnScores.setOnClickListener(this);
 
-        btnLibrary = (Button)findViewById(R.id.btn_library);
+        Button btnLibrary = (Button) findViewById(R.id.btn_library);
         btnLibrary.setOnClickListener(this);
 
-        btnBuildIt = (Button)findViewById(R.id.btn_build_it);
+        Button btnBuildIt = (Button) findViewById(R.id.btn_build_it);
         btnBuildIt.setOnClickListener(this);
 
-        btnXYZReader = (Button)findViewById(R.id.btn_xyz);
+        Button btnXYZReader = (Button) findViewById(R.id.btn_xyz);
         btnXYZReader.setOnClickListener(this);
 
-        btnCapstone = (Button)findViewById(R.id.btn_capstone);
+        Button btnCapstone = (Button) findViewById(R.id.btn_capstone);
         btnCapstone.setOnClickListener(this);
     }
 
